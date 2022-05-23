@@ -1,0 +1,43 @@
+Problem Statement :-
+Being a responsible developer at Puma, your task is to create an admin panel for the marketing team, where they can add, remove and update their products data.
+
+Description :-
+Create an admin panel (index.html), which will have a form to accept data.
+Form will have the following fields :-
+Type
+Description
+Price
+Image URL
+Use local storage as your database.
+Each product should be stored in an array and this array will be stored in local storage.
+Provide a “Add Product” button to add the data to local storage.
+Create a “Show Products” button at the top which will redirect you to “inventory.html”
+Create a product display page (inventory.html), Where all the products stored in the local storage will be displayed.
+Each new product data should get appended next to each other in grid format.
+Each product should have a “Remove” button as a part of its HTML.
+On clicking on remove, the product should be removed from the DOM as well as the local storage.
+Add a “Add More Product” button at the top which will redirect you to index.html.
+Note :-
+Use better ways to create objects that we learnt. Comment each line of code in your own words. Complete the functionality first before investing heavily into design.
+
+Things to follow :-
+The “Show product” button will have id - “show_products”.
+Give the form id :- “products”.
+The input fields will have the following IDs :-
+Type :- “type”
+Description :- “desc”
+Price :- “price”
+Image :- “image”
+The product object will have following keys: -
+{
+type: "",
+desc: "",
+price: "",
+image: ""
+}
+The products will be stored in local storage with key “products”.
+Add Product button will have an id :- “add_product”.
+All the input fields should become empty after submitting the form
+Add more product button should have id :- “add_more_product”
+Remove product button should have id :- “remove_product”.
+Append all products data to div with an id :- "all_products"
